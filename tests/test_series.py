@@ -1,11 +1,9 @@
 from math_series.series import (fibonacci, lucas, sum_series)
 
 def test_fibonacci():
-    actual = fibonacci(10)
-    expected = 89
+    actual = fibonacci(8)
+    expected = 21
     assert actual == expected
-
-   
 
 
 def test_lucas():
@@ -16,13 +14,13 @@ def test_lucas():
 
 def test_math_new():
     actual = sum_series(5)
-    expected = 8
+    expected = 5
     assert actual == expected
 
 
 def test_math_fib():
-    actual = sum_series(10,0,1)
-    expected = 89
+    actual = sum_series(8,0,1)
+    expected = 21
     assert actual == expected
 
 
